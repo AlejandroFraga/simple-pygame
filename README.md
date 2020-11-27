@@ -13,11 +13,11 @@ Simple python game created with pygame
 
 ### Gameplay and screenshots
 
-![Crossy RPG Game](https://github.com/AlejandroFraga/simple-pygame/images/Crossy_RPG_Game.gif)
+![Crossy RPG Game](https://github.com/AlejandroFraga/simple-pygame/blob/main/images/Crossy_RPG_Game.gif?raw=true)
 
-![Simple pygame - Level 1](https://github.com/AlejandroFraga/simple-pygame/images/Level_1.gif)
+![Simple pygame - Level 1](https://github.com/AlejandroFraga/simple-pygame/blob/main/images/Level_1.gif?raw=true)
 
-![Simple pygame - Level 2](https://github.com/AlejandroFraga/simple-pygame/images/Level_2.gif)
+![Simple pygame - Level 2](https://github.com/AlejandroFraga/simple-pygame/blob/main/images/Level_2.gif?raw=true)
 
 ## Playing the game
 
