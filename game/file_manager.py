@@ -2,7 +2,8 @@ from enum import Enum
 
 import pygame
 
-from data_helper import safe_cast, split_in_chars_and_remove, clean_end_line_str, process_coordinates
+from data_helper import safe_cast, split_in_chars_and_remove, clean_end_line_str, process_coordinates, \
+    is_list_of_size, check_slash_at_end
 
 
 def load_image(file_path, width, height):
@@ -139,12 +140,11 @@ class FileReader:
 
             # Otherwise, process the legend and store it in the dictionary
             else:
-                self.legend[duple[0]] = self.path + clean_end_line_str(duple[1])
+                self.legend[duple[0]] = check_slash_at_end(self.path) + clean_end_line_str(duple[1])
 
     def __background_line(self, line):
         # The line indicates the end of the background current list
         if line.startswith(self.background_end_symbol):
-
             # Create a new background list, store it in the backgrounds and ignore the rest of this line
             self.background = []
             self.backgrounds.append(self.background)
@@ -165,7 +165,8 @@ class FileReader:
         duple = line.split(self.separator_symbol)
 
         # Correctly process the coordinates in the second part of the line
-        duple = process_coordinates(duple)
+        if is_list_of_size(duple, 2):
+            duple[1] = process_coordinates(duple[1])
 
         self.elements.append(duple)
 

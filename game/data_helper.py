@@ -149,17 +149,36 @@ def clean_parentheses_and_space_str(string):
         return string
 
 
-def process_coordinates(duple):
+def process_coordinates(coordinates):
+    """
+    Function that process the coordinates of a duple, cleaning and splitting them into 2 numbers
 
-    if is_list_of_size(duple, 2):
+    :param coordinates: str of the coordinates to process
+    :return: The coordinates processed
+    """
+
+    if is_str(coordinates):
 
         # Split the element by the "," in the middle
-        duple[1] = duple[1].split(",")
+        coordinates = coordinates.split(",")
 
-        if is_list_of_size(duple[1], 2):
-
+        if is_list_of_size(coordinates, 2):
             # Clean the spaces, parenthesis and end of line of the elements, so only the numbers remain
-            duple[1][0] = clean_parentheses_and_space_str(duple[1][0])
-            duple[1][1] = clean_end_line_str(clean_parentheses_and_space_str(duple[1][1]))
+            coordinates[0] = clean_parentheses_and_space_str(coordinates[0])
+            coordinates[1] = clean_end_line_str(clean_parentheses_and_space_str(coordinates[1]))
 
-    return duple
+    return coordinates
+
+
+def check_slash_at_end(string):
+    """
+    Function that adds a slash at the end of a string, if it doesn't have it already
+
+    :param string: Str to check the slash at the end
+    :return: The string with the slash at the end
+    """
+
+    if is_str(string) and not string.endswith("/"):
+        string += "/"
+
+    return string
