@@ -1,8 +1,6 @@
-# Simple [Pygame](https://www.pygame.org/)
+# Simple [Pygame][pygame]
 
 This is the base for a rpg game created in python with pygame: A cross-platform set of Python modules designed for writing video games.
-
-Taking as starting point the final product of the project [Road Crossing Game](https://academy.zenva.com/product/python-programming-mini-degree/) from [Zenva](https://academy.zenva.com/)
 
 ## Table of contents
 
@@ -14,7 +12,51 @@ Taking as starting point the final product of the project [Road Crossing Game](h
 
 ## Description
 
-WIP
+After completing the Zenva course [Learn Python Programming by Making a Game][course], the final version of the project is a very basic crossy "rpg" game in which you control the player with the up and down arrow key. You can only move in this two directions.
+
+Your objective is to reach the treasure avoiding the enemies which bounce from side to side in the screen.
+
+This course shows a lot about python and how to use it. But there are some problems in this [version](#final-result-from-the-zenva-course):
+ - Everything is hard-coded, from sizes to collision detection
+ - The background, in reality is just a picture drawn below everything else
+ - When reescaling the player and enemies, as we can see the textures are streched as their aspect ratio doesn't correspond to the new sizes
+ - The collision detection ignores completely all the background objects, as it is only a picture (you can see the enemies going through trees)
+ - All the coding was done in a single file, with huge functions all in a big spaghetti code
+ - The speed of everything is pixel dependent, so, making the display smaller will make eveything move faster
+ - ...
+
+The final code looks like this:
+
+![Crossy RPG Game Code](https://github.com/AlejandroFraga/simple-pygame/blob/main/images/Crossy_RPG_Game_Code.gif?raw=true)
+
+So I decide to fix a lot of the problems and improve this project. My objective is not to create a perfect game, with a thousand levels and completely polished. Is to end up with a improved version of this game, with the basis for anyone to create his own levels and the hability to create and test them fastly.
+
+This can be splitted into subobjectives, which are:
+ - - [X] The spaghetti code will be reorganized and improved
+ - - [X] All the levels should be stored and read from simple text files, so multiple can be easily stored and modified
+ - - [X] The background won't be a simple picture but a collection of tiles that will be drawn and managed individually
+ - - [X] The collision in the tiles should be easily and visually indicated in the file
+ - - [X] The collision system will really work and manage all the collisions in the game in both axis
+ - - [X] The player will be able to move in both axis, not just up and down
+ - - [X] All the tiles will have the same size
+
+First of all, the spaghetti code had to be cleaned. So I created a simple diagram showing the different files that I would create and how they would interact: 
+
+![File Interaction](https://github.com/AlejandroFraga/simple-pygame/blob/main/images/File_Interaction.jpg?raw=true)
+
+The only file that wasn't represented was the Data Helper, as it would be a file with functions to help the other classes process data. For example safely casting a variable to a type, or checking if a variable is a list of a exact size... So this file would interact with all the others when needed.
+
+After splitting all the code into its respective files, creating new functions and cleaning all the spaghetti code, I began to improve the background and tile system of the game.
+
+I trimmed all the tiles in the background image, separating it into [the different textures](https://github.com/AlejandroFraga/simple-pygame/tree/main/game/resources/textures) of the game in tiles of 16x16 pixels. And began to write the file from which I would load the level, initially just replicating the background image.
+
+Then I started working in the collision system, making the enemies bounce the colliders of the desired game objects in the game and making the player unable to step on them but sticking to the limits before colliding, so we can go sticked to the walls or the limits of the screen.
+
+Instead of calculating if player will collide, and leaving him in the same position, if he can get closer to the collider we'll move him. This way we'll be able to enter 1 tile size corridors.
+
+The player was improved to be able to move in both axis.
+
+And in general, another improvements were made to improve the overall quality and 
 
 ### Gameplay and screenshots
 
@@ -24,7 +66,7 @@ And finally, a custom map.
 
 #### Final result from the Zenva course
 
-![Crossy RPG Game](https://github.com/AlejandroFraga/simple-pygame/blob/main/images/Crossy_RPG_Game.gif?raw=true)
+![Crossy RPG Game Level](https://github.com/AlejandroFraga/simple-pygame/blob/main/images/Crossy_RPG_Game_Level.gif?raw=true)
 
 #### Zenva level with improvements
 
@@ -227,3 +269,7 @@ $ pip install pygame
 
 Depending on the version of pip that you have installed.
 Try pip3 first, and if the command is not recognised, try with pip.
+
+   [zenva]: <https://academy.zenva.com>
+   [pygame]: <https://www.pygame.org>
+   [course]: <https://academy.zenva.com/product/learn-python-programming-by-making-a-game/>
