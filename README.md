@@ -22,21 +22,21 @@ WIP
 
 #### Final result from the Zenva course
 
-![Crossy RPG Game](https://github.com/AlejandroFraga/simple-pygame/images/Crossy_RPG_Game.gif)
+![Crossy RPG Game](https://github.com/AlejandroFraga/simple-pygame/blob/main/images/Crossy_RPG_Game.gif?raw=true)
 
 #### Zenva level with improvements
 
 After the improvements made in this project, the original level looks like this:
 
-![Simple pygame - Level 1](https://github.com/AlejandroFraga/simple-pygame/images/Level_1.gif)
+![Simple pygame - Level 1](https://github.com/AlejandroFraga/simple-pygame/blob/main/images/Level_1.gif?raw=true)
 
 #### Custom level with improvements
 
 A second level was created to show what can be done with the project as it is now:
 
-![Simple pygame - Level 2](https://github.com/AlejandroFraga/simple-pygame/images/Level_2.gif)
+![Simple pygame - Level 2](https://github.com/AlejandroFraga/simple-pygame/blob/main/images/Level_2.gif?raw=true)
 
-This level is read from a [plain txt](https://github.com/AlejandroFraga/simple-pygame/tree/main/game/resources/levels/level_2.txt) file which indicates how the level is constructed. This way, the level creation proccess is simple, fast, and as we'll see very visual.
+This level is read from a [plain txt file](https://github.com/AlejandroFraga/simple-pygame/tree/main/game/resources/levels/level_2.txt) which indicates how the level is constructed. This way, the level creation proccess is simple, fast, and as we'll see very visual.
 
 ### Level file syntax
 
@@ -84,7 +84,7 @@ This way we can have the textures in different folders, organized and we don't h
 
 We can see this region for the custom level I created:
 
-![Simple pygame - Level 2 Legend](https://github.com/AlejandroFraga/simple-pygame/images/Level_2_Legend.png)
+![Simple pygame - Level 2 Legend](https://github.com/AlejandroFraga/simple-pygame/blob/main/images/Level_2_Legend.png?raw=true)
 
 #### -> Background region
 
@@ -118,7 +118,7 @@ To separate the different layers we'll put any number of consecuent dash "-" in 
 
 We can see this region for the custom level I created:
 
-![Simple pygame - Level 2 Backgrounds](https://github.com/AlejandroFraga/simple-pygame/images/Level_2_Background.png)
+![Simple pygame - Level 2 Backgrounds](https://github.com/AlejandroFraga/simple-pygame/blob/main/images/Level_2_Background.png?raw=true)
 
 #### -> Colliders region
 
@@ -142,7 +142,7 @@ In the end, this will just decide which tiles can we step on and which we don't.
 
 We can see this region for the custom level I created:
 
-![Simple pygame - Level 2 Colliders](https://github.com/AlejandroFraga/simple-pygame/images/Level_2_Colliders.png)
+![Simple pygame - Level 2 Colliders](https://github.com/AlejandroFraga/simple-pygame/blob/main/images/Level_2_Colliders.png?raw=true)
 
 #### -> Elements region
 
@@ -160,7 +160,7 @@ Moving n positions to the right and m positions to the bottom will give us the (
 
 We can see this region for the custom level I created:
 
-![Simple pygame - Level 2 Elements](https://github.com/AlejandroFraga/simple-pygame/images/Level_2_Elements.png)
+![Simple pygame - Level 2 Elements](https://github.com/AlejandroFraga/simple-pygame/blob/main/images/Level_2_Elements.png?raw=true)
 
 ## Posible future improvements
 
