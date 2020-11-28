@@ -114,7 +114,7 @@ In this section, we include every tile that we want to be shown in the backgroun
 The syntax of this region lines will be (without the spaces):
 
 ```
-ascii_symbol ascii_symbol ascii_symbol ascii_symbol
+ascii_symbol ascii_symbol ascii_symbol ascii_symbol ...
 ```
 
 For e.g.:
@@ -148,7 +148,7 @@ In this section, we include every game object that we want to be collidable, as 
 The syntax of this region lines will be (without the spaces):
 
 ```
-ascii_symbol ascii_symbol ascii_symbol ascii_symbol
+ascii_symbol ascii_symbol ascii_symbol ascii_symbol ...
 ```
 
 For e.g.:
