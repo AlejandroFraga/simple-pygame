@@ -118,7 +118,7 @@ To separate the different layers we'll put any number of consecuent dash "-" in 
 
 We can see this region for the custom level I created:
 
-![Simple pygame - Level 2 Backgrounds](https://github.com/AlejandroFraga/simple-pygame/blob/main/images/Level_2_Background.png?raw=true)
+![Simple pygame - Level 2 Backgrounds](https://github.com/AlejandroFraga/simple-pygame/blob/main/images/Level_2_Backgrounds.png?raw=true)
 
 #### -> Colliders region
 
