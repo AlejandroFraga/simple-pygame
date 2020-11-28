@@ -8,7 +8,7 @@ Taking as starting point the final product of the project [Road Crossing Game](h
 
 - [Description](#description)
   - [Gameplay and screeshots](#gameplay-and-screenshots)
-  - [Level file xyntax](#level-file-syntax)
+  - [Level file syntax](#level-file-syntax)
 - [Posible future improvements](#posible-future-improvements)
 - [Playing the game](#playing-the-game)
 
@@ -18,7 +18,9 @@ WIP
 
 ### Gameplay and screenshots
 
-Here we can see a gifs showing the different points of development, starting from the final result of the course. After all the improvement of the game, the original level reworked. And finally, a custom map.
+Here we can see a gifs showing the different points of development, starting from the final result of the course.
+After all the improvement of the game, the original level reworked.
+And finally, a custom map.
 
 #### Final result from the Zenva course
 
