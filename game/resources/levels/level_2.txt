@@ -1,7 +1,11 @@
+# Level 2, made from the resources that we had increasing the difficulty and using more deeply the collision system
+
 -> Legend
 
-/ - resources/textures/
+# The tiles size
 ( - 64
+
+/ - resources/textures/
 Æ - enemy.png
 @ - player.png
 × - treasure.png
@@ -27,6 +31,8 @@
 £ - statue.png
 Ø - well.png
 
+# Draw the different layers of background
+
 -> Background
 
 ........═══════════........
@@ -48,6 +54,8 @@
 
 ---------------------------
 
+# Decorate the grass with flowers
+
                            
                            
   ░                   ░    
@@ -64,6 +72,8 @@
             ░         ░    
                            
                            
+
+# Define the tiles in which we can't step on
 
 -> Colliders
 
@@ -83,6 +93,8 @@
 §¥                      ¥§§
 ▄▄▄▄▄▄▄▄▄▄▄!   ø▄▄▄▄▄▄▄▄▄▄▄
 §¥¥§                  ¥§¥¥§
+
+# Put the player, enemies and treasure on the map
 
 -> Elements
 

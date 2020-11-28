@@ -18,7 +18,7 @@ WIP
 
 ### Gameplay and screenshots
 
-WIP
+Here we can see a gifs showing the different points of development, starting from the final result of the course. After all the improvement of the game, the original level reworked. And finally, a custom map.
 
 #### Final result from the Zenva course
 
@@ -36,9 +36,30 @@ A second level was created to show what can be done with the project as it is no
 
 ![Simple pygame - Level 2](https://github.com/AlejandroFraga/simple-pygame/blob/main/images/Level_2.gif?raw=true)
 
-This level is read from a [plain txt file](https://github.com/AlejandroFraga/simple-pygame/tree/main/game/resources/levels/level_2.txt) which indicates how the level is constructed. This way, the level creation proccess is simple, fast, and as we'll see very visual.
+These last two levels are read from a [plain txt files](https://github.com/AlejandroFraga/simple-pygame/tree/main/game/resources/levels) which indicates how the level is constructed. This way, the level creation proccess is simple, fast, and as we'll see very visual.
+
+In just a few minutes, anyone, just with a simple txt editor as WordPad, can create a simple map.
 
 ### Level file syntax
+
+There are some reserved ascii symbols that shouldn't be used to avoid problems:
+ - "/" Reserved to indicate the routes in the Legend region
+ - "(" Reserved to indicate the sizes of the tiles in the Legend section, but also should be used to indicate coordinates
+ - "\-" Reserved to separate symbols from textures/coordinates, and to separate background layers
+ - ">" Combinated with the slash "->" indicates the start of a region
+ - " " The space is reserved to indicate that that tile should be empty
+ - "#" The lines that start with this symbol, are treated as comments, and so, ignored by the game
+ - And also, empty lines are ignored
+
+With that in mind, we can begin to see the syntax of all the regions of the level file. Each region will start with the line:
+
+```
+-> name_of_the_region
+```
+
+This way, we indicate the file reader, that the next lines, until a change, are from that region.
+
+The order of the regions is not important, you can put them as you want, even "pause" one and go back to it later again.
 
 #### -> Legend region
 
@@ -144,6 +165,8 @@ We can see this region for the custom level I created:
 
 ![Simple pygame - Level 2 Colliders](https://github.com/AlejandroFraga/simple-pygame/blob/main/images/Level_2_Colliders.png?raw=true)
 
+With this syntax, anyone can easily create his own custom level and load it in the game to play.
+
 #### -> Elements region
 
 In this section, we include the player, the enemies and everything that we want to be interactable, as the treasure.
@@ -169,7 +192,9 @@ We can see this region for the custom level I created:
  - - [ ] End cleaning and improving the code quality for version 2.0.0
  - - [ ] Enable/Disable the fps counter in the level file and dynamically
  - - [ ] Set the fps cap (0 to unlock) in the level file
+ - - [ ] Set the caption/title of the screen in the level file
  - - [ ] Change the text font, loading also by path
+ - - [ ] Better error handling when loading the level (no player, no treasure, ...)
  - - [ ] Set the player and each enemy a speed in the level file
  - - [ ] Introduce animations in the game
  - - [ ] Screen/Level transition like in Zelda*
