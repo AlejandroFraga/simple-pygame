@@ -33,7 +33,7 @@ So I decide to fix a lot of the problems and improve this project. My objective 
 
 This can be splitted into subobjectives, which are:
  - - [X] The spaghetti code will be reorganized and improved
- - - [X] All the levels should be stored and read from simple text files, so multiple can be easily stored and modified
+ - - [X] All the levels should be stored and read from simple text files, so multiple levels can be easily stored and modified
  - - [X] The background won't be a simple picture but a collection of tiles that will be drawn and managed individually
  - - [X] The collision in the tiles should be easily and visually indicated in the file
  - - [X] The collision system will really work and manage all the collisions in the game in both axis
