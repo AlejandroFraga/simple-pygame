@@ -1,24 +1,32 @@
 -> Legend
 
-/ - resources/textures/
+# The tiles size
 ( - 64
-ø - cauldron.png
+
+/ - resources/textures/
 Æ - enemy.png
+@ - player.png
+× - treasure.png
+
+/ - resources/textures/buildings/
 ═ - floor_blue.png
 ║ - floor_yellow.png
+▄ - wall_grey.png
+▀ - wall_red_horizontal.png
+█ - wall_red_vertical.png
+
+/ - resources/textures/enviroment/
 ░ - flowers.png
 ▓ - forest.png
 . - grass.png
 § - oak.png
 ¥ - pine.png
-@ - player.png
 ▒ - rocks.png
+
+/ - resources/textures/props/
+ø - cauldron.png
 ! - sign.png
 £ - statue.png
-× - treasure.png
-▄ - wall_grey.png
-▀ - wall_red_horizontal.png
-█ - wall_red_vertical.png
 Ø - well.png
 
 -> Background
