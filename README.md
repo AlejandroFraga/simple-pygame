@@ -245,7 +245,6 @@ We can see this region for the custom level I created:
  - ...
 
 \*
-
 ![Zelda screen transition](https://habrastorage.org/getpro/habr/post_images/ae7/c29/539/ae7c295393f6706e17e788e0a1cc39e7.gif)
 
 ## Playing the game
