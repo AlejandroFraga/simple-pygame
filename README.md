@@ -1,6 +1,6 @@
 # Simple [Pygame][pygame]
 
-This is the base for a rpg game created in python with pygame: A cross-platform set of Python modules designed for writing video games.
+This is the base for a 2D action-adventure game like [The Legend of Zelda](https://en.wikipedia.org/wiki/The_Legend_of_Zelda_(video_game)) created in python with pygame: A cross-platform set of Python modules designed for writing video games.
 
 ## Table of contents
 
@@ -12,7 +12,7 @@ This is the base for a rpg game created in python with pygame: A cross-platform 
 
 ## Description
 
-After completing the Zenva course [Learn Python Programming by Making a Game][course], the final version of the project is a very basic crossy "rpg" game in which you control the player with the up and down arrow key. You can only move in this two directions.
+After completing the Zenva course [Learn Python Programming by Making a Game][course], the final version of the project is a very basic "crossy rpg" game in which you control the player with the up and down arrow key. You can only move in this two directions.
 
 Your objective is to reach the treasure avoiding the enemies which bounce from side to side in the screen.
 
