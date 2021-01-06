@@ -130,3 +130,6 @@ dmypy.json
 
 # PyCharm Idea folder
 */.idea/
+
+# Original project files
+game/original/*
